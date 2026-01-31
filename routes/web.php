@@ -15,3 +15,4 @@ Route::get("/client/create", [ClientController::class, 'create']);
 Route::get("/client/{client}", [ClientController::class, 'show']);
 Route::get("/client/{client}/edit", [ClientController::class, 'edit']);
 Route::patch("/client/{client}/update", [ClientController::class, 'update']);
+Route::delete("/client/{client}/destroy", [ClientController::class, 'destroy']);
