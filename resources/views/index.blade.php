@@ -1,0 +1,4 @@
+<x-main>
+<h1>Welcome</h1>
+<p>This is the index page!</p>
+</x-main>
