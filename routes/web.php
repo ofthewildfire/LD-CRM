@@ -8,6 +8,6 @@ Route::view("/", 'index');
 
 //Clients
 Route::get("/client/create", [ClientController::class, 'create']);
-Route::get("/clients", [ClientController::class, 'index']);
+Route::get("/clients", [ClientController::class, 'index'])->name('clients_index');
 Route::get("/client/{client}", [ClientController::class, 'show']);
-
+Route::post("/clients", [ClientController::class, 'store']);

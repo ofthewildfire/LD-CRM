@@ -14,7 +14,7 @@ class ClientController extends Controller
     public function index()
     {
         return view('clients.index', [
-            'clients' => Client::simplePaginate(5)
+            'clients' => Client::latest()->simplePaginate(5)
         ]);
     }
 
@@ -31,7 +31,8 @@ class ClientController extends Controller
      */
     public function store(StoreClientRequest $request)
     {
-        //
+        Client::create($request->validated());
+        return redirect('/clients');
     }
 
     /**

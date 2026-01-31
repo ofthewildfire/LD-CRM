@@ -11,13 +11,10 @@
             </button>
         </div>
         <el-popover-group class="hidden lg:flex lg:gap-x-12">
-            <a href="#" class="text-sm/6 font-semibold text-white">Features</a>
-            <a href="#" class="text-sm/6 font-semibold text-white">Marketplace</a>
-            <a href="#" class="text-sm/6 font-semibold text-white">Company</a>
+            <a href="/" class="text-sm/6 font-semibold text-white">Home</a>
+            <a href="/clients" class="text-sm/6 font-semibold text-white">Clients</a>
+            <a href="/projects" class="text-sm/6 font-semibold text-white">Projects</a>
         </el-popover-group>
-        <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="#" class="text-sm/6 font-semibold text-white">Log in <span aria-hidden="true">&rarr;</span></a>
-        </div>
     </nav>
     <el-dialog>
         <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
